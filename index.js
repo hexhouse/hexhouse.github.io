@@ -5,8 +5,10 @@ let camera;
 let renderer;
 let cube;
 let plane1;
-let plane2;
-
+let font;
+function preload() {
+  font = loadFont('Skanaus-Display.otf');
+}
 function setup() {
   setupScene();
   setupRenderer();
@@ -125,9 +127,8 @@ function onWindowResize() {
 function draw() {
   requestAnimationFrame(draw);
 
-  stroke(0,255,255);
   textSize(40);
-  textFont("Russo One");
+  textFont(font);
 
   //text to b displayed, x position, y position
   text("Hex House", mouseX,mouseY);
