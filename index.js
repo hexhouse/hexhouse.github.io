@@ -15,11 +15,9 @@ function setup() {
   setupLights();
 
   let video1 = setUpVideo(
-    "https://cdn.glitch.me/39b7ba95-a96e-44aa-9110-0d917a3046ad/HH_wiggle.mp4?v=1671833610157"
+    "https://cdn.glitch.global/39b7ba95-a96e-44aa-9110-0d917a3046ad/wiggleCrop.mp4?v=1671834113835"
   );
-  let video2 = setUpVideo(
-    "https://cdn.glitch.com/39b7ba95-a96e-44aa-9110-0d917a3046ad%2FOutro_Vid_v2.mp4?v=1596058679403"
-  );
+
 
   let texture1 = createTextureFromVideoElement(video1);
 
@@ -126,6 +124,14 @@ function onWindowResize() {
 
 function draw() {
   requestAnimationFrame(draw);
+
+  stroke(0,255,255);
+  textSize(40);
+  textFont("Russo One");
+
+  //text to b displayed, x position, y position
+  text("Hex House", mouseX,mouseY);
+
   renderer.render(scene, camera);
 
   let angle = 0.007;
