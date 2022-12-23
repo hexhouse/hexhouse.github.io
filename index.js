@@ -65,6 +65,7 @@ function setUpVideo(inSrc) {
 
   videlem.autoplay = true;
   videlem.muted = true;
+  videlem.loop = true;
   videlem.setAttribute("crossorigin", "anonymous");
   // i think this will not be not be needed if you have a server
 

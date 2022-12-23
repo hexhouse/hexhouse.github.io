@@ -17,9 +17,13 @@ canvas {
 #info {
   font-family: Skanaus;
 	position: absolute;
-	top: 10px;
+
 	width: 100%;
 	text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 500vh;
 	z-index: 100;
 	display:block;
+  color: #ffffff;
 }
