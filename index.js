@@ -6,9 +6,7 @@ let renderer;
 let cube;
 let plane1;
 let font;
-function preload() {
-  font = loadFont('Skanaus-Display.otf');
-}
+
 function setup() {
   setupScene();
   setupRenderer();
@@ -126,12 +124,6 @@ function onWindowResize() {
 
 function draw() {
   requestAnimationFrame(draw);
-
-  textSize(40);
-  textFont(font);
-
-  //text to b displayed, x position, y position
-  text("Hex House", mouseX,mouseY);
 
   renderer.render(scene, camera);
 

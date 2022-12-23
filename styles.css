@@ -9,3 +9,17 @@ canvas {
 .hide {
   display: none;
 }
+@font-face {
+  font-family: Skanaus;
+  src: url("Skanaus-Display.otf") format("opentype");
+}
+
+#info {
+  font-family: Skanaus;
+	position: absolute;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
+}
