@@ -22,7 +22,7 @@ canvas {
 	text-align: center;
   align-items: center;
   justify-content: center;
-  height: 500vh;
+  font-size: 150%;
 	z-index: 100;
 	display:block;
   color: #ffffff;
