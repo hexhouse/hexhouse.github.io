@@ -128,9 +128,9 @@ function draw() {
 
   renderer.render(scene, camera);
 
-  let angle = 0.007;
-  plane1.rotation.x += angle;
-  plane1.rotation.y += angle * 0.125;
+  //let angle = 0.007;
+  // plane1.rotation.x += angle;
+  // plane1.rotation.y += angle * 0.125;
 
  // camera.position.x += 0.01;
 }
