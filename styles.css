@@ -1,14 +1,20 @@
 body, html {
   margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
 canvas {
   display: block;
+  z-index: -1;
+  top: 265px;
+  position: absolute;
 }
 
 .hide {
   display: none;
 }
+
 @font-face {
   font-family: Skanaus;
   src: url("Skanaus-Display.otf") format("opentype");
@@ -16,14 +22,32 @@ canvas {
 
 #info {
   font-family: Skanaus;
-	position: absolute;
-
-	width: 100%;
-	text-align: center;
-  align-items: center;
-  justify-content: center;
+  color: white;
+  width: 90%;
+  display: block;
+  margin: auto;
+  text-align: center;
   font-size: 150%;
 	z-index: 100;
-	display:block;
-  color: #ffffff;
 }
+
+a {
+  color: white;
+  /* text-decoration: none; */
+  font-size: 65%;
+  /* background-color: purple; */
+  font-family: monospace;
+  /* padding: 5px; */
+  /* margin-bottom: 86px !important; */
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+#links {
+  margin-top: 52px;
+}
+
