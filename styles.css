@@ -34,7 +34,7 @@ canvas {
 a {
   color: white;
   /* text-decoration: none; */
-  font-size: 65%;
+  font-size: 75%;
   /* background-color: purple; */
   font-family: monospace;
   /* padding: 5px; */
@@ -48,6 +48,6 @@ a:hover {
 
 
 #links {
-  margin-top: 52px;
+  margin-top: 25px;
 }
 
