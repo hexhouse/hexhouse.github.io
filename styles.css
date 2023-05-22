@@ -1,15 +1,45 @@
-body, html {
+:root {
+  --navy: #001f3f;
+  --blue: #0074d9;
+  --aqua: #7fdbff;
+  --teal: #39cccc;
+  --olive: #3d9970;
+  --green: #2ecc40;
+  --lime: #01ff70;
+  --yellow: #ffdc00;
+  --orange: #ff851b;
+  --red: #ff4136;
+  --maroon: #85144b;
+  --fuchsia: #f012be;
+  --purple: #b10dc9;
+  /* --black: #111111; */
+  --black: #000;
+  --gray: #aaaaaa;
+  --silver: #dddddd;
+  --white: #ffffff;
+}
+
+body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  font-size: 1.25em;
+  color: var(--white);
+  background-color: var(--black);
+  font-size: 1.1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 canvas {
   display: block;
-  z-index: -1;
-  top: 265px;
   position: absolute;
+  top: 35%;
+  z-index: -1;
 }
 
 .hide {
@@ -21,10 +51,13 @@ canvas {
   src: url("Skanaus-Display.otf") format("opentype");
 }
 
+h1 {
+  font-size: 3em;
+  margin: 20px;
+}
+
 #info {
   font-family: Skanaus;
-  color: white;
-  width: 90%;
   display: block;
   margin: auto;
   text-align: center;
@@ -32,22 +65,35 @@ canvas {
 	z-index: 100;
 }
 
+#info p {
+  font-size: 1.2em;
+  margin: 0 10%;
+  max-width: 80%;
+}
+
 a {
-  color: white;
   font-family: monospace;
-  display: inline-block;
+  font-size: 1.3em;
+  color: var(--white);
   padding: 5px;
-  border: 1px solid white;
+  border: 1px solid var(--white);
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 a:hover {
-  background-color: white;
-  color: black;
+  color: var(--black);
+  background-color: var(--white);
 }
 
-
-#links {
-  margin-top: 25px;
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+li {
+    margin: 10px 0;
+}

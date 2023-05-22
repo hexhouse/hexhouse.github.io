@@ -50,7 +50,6 @@ function setupCamera() {
 }
 
 // https://stackoverflow.com/questions/19251983/dynamically-create-a-html5-video-element-without-it-being-shown-in-the-page/20611625
-
 function setUpVideo(inSrc) {
   var videlem = document.createElement("video");
   /// ... some setup like poster image, size, position etc. goes here...
@@ -59,7 +58,6 @@ function setUpVideo(inSrc) {
   sourceMP4.type = "video/mp4";
   sourceMP4.src = inSrc;
   // performance
-
 
   videlem.appendChild(sourceMP4);
 
@@ -127,12 +125,6 @@ function draw() {
   requestAnimationFrame(draw);
 
   renderer.render(scene, camera);
-
-  //let angle = 0.007;
-  // plane1.rotation.x += angle;
-  // plane1.rotation.y += angle * 0.125;
-
- // camera.position.x += 0.01;
 }
 
 setup();
