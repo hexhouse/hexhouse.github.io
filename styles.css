@@ -75,6 +75,10 @@ h1 {
   width: 100%;
 }
 
+.credits {
+  font-family: Skanaus;
+}
+
 a {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.28em;
