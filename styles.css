@@ -54,6 +54,16 @@ canvas {
   src: url("Skanaus-Display.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Monor;
+  src: url("Monor-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Monor Bold;
+  src: url("Monor-Bold.otf") format("opentype");
+}
+
 h1 {
   font-size: 2.6em;
   margin: 20px;
@@ -80,7 +90,7 @@ h1 {
 }
 
 a {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Monor, 'Courier New', Courier, monospace;
   font-size: 1.28em;
   color: var(--white);
   overflow-wrap: anywhere;
@@ -188,7 +198,7 @@ li {
 }
 
 .support-heading {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Monor Bold', 'Courier New', Courier, monospace;
   font-size: 1.3em;
   font-weight: normal;
   margin: 24px 0 6px 0;
